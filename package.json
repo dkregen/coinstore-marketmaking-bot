@@ -1,0 +1,36 @@
+{
+  "name": "coinstore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "env-cmd ts-node src/main.ts",
+    "start:dev": "env-cmd nodemon src/main.ts",
+    "test": "env-cmd nodemon src/test.ts",
+    "cancel": "env-cmd ts-node src/cancel.ts",
+    "start:py": "python rest.py"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.21",
+    "@types/node": "^18.0.0",
+    "@types/ws": "^8.5.3",
+    "env-cmd": "^10.1.0",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.16",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.5.4",
+    "ts-node": "^10.8.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "crypto": "^1.0.1",
+    "moment": "^2.29.3",
+    "node-adodb": "^5.0.3",
+    "utf8": "^3.0.0",
+    "ws": "^8.8.0"
+  }
+}
